@@ -1,10 +1,14 @@
 *{
-    margin: 0%;
     box-sizing: border-box;
+}
+hr{
+    width: 50%;
+    border-color: #2d53ff ;
+    margin-right: 30%;
 }
 body{
     background-color: black;
-    color: #E8F1F2;
+    color: #dcdfee;
     max-width: 1200px;
     margin: auto;
     font-family: monospace;
@@ -23,9 +27,8 @@ nav{
     width: 5%;
     height: 100vh;
     min-width: fit-content;
-    background-color: #F9B5AC;
+    background-color: #5372ff;
     color: black;
-    
 }
 nav h2{    
     writing-mode: vertical-lr;
@@ -38,16 +41,15 @@ nav i{
     color: black;
     display: block;
 }
-header{
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
+.foot{
+    width: 95%;
+    justify-content: space-between;
 }
 .profile{
     width: 30%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    object-fit: cover;
 }
 .study img{
     width: 25%;
@@ -55,58 +57,100 @@ header{
     margin: 5px;
 }
 .study div{
-    width: 70%;
+    width: 80%;
 }
 #about{
-    width: 50%;
-    align-self: center;
+    width:95%;
     padding: 5px;
+    margin: auto;
+}
+#s-skill{
+    width: 40%;
 }
 .study{
+    width: 55%;
     justify-content: center;
     align-items: center;
-    flex-wrap:wrap-reverse ;
+    /* flex-wrap:wrap-reverse ; */
 }
 section{
-    width:48% ;
+    width:45% ;
     min-width: 200px;
     margin: 0;
 }
 main{
-    margin-top: 25px;
+    margin:5%;
+}
+.g{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr;
+    gap:1%
 }
 #t-skill{
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border: 2px solid #2d53ff;
-    width: 60%;
-    flex-direction: column;
-    align-items: center;
+    width: 95%;
+    text-align: center;
     padding: 4%;
     margin: 2%;
 }
 .skill-h{
     text-align: right;
 }
-.dis, .skill-h{
-    margin-left: 20%;
-}
 ul{
     list-style-type: none;
 }
-li{
-    margin: 10px;
-}
-.icon, #t-skill p, .project, .skill-h {
-    width: 70%;
-    justify-self: center;
+.icon, #t-skill p, .project, #t-skill h3 {
+    width: 90%;
 }
 .project{
-    border-bottom-right-radius: 50%;
+    width: 95%;
+}
+.card{
+    width: calc(92%/3);
+    padding: 1%;
+    height: 95%;
+    margin: auto;
+    flex-direction: column;
+}
+.card img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+.card div{
+    padding:5%;
+}
+.hobby{
+    width: 100%;
+    align-items: center;
+}
+.ufo{
+    width: 100%;
+    margin: auto;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.icon{
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
 }
 .icon img{
     width: 50%;
-    object-fit: cover;
+    object-fit: contain;
+}
+.special{
+    z-index: 2;
+    text-shadow: #5372ff;
+    position: relative;
+    right: 0;
+    bottom: 50%;
+    object-fit: contain;
+    margin-top: -20%;
+    width: 10%;
 }
 .right{
     margin: auto;
@@ -114,56 +158,124 @@ li{
     align-self: center;
     justify-content: center;
 }
-#s-skill{
-    border: 10px solid #AB3428;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    width: 80%;
-    padding: 5%;
+#s-skill ul,.left ul{
+    border: 5px solid #2d53ff;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    text-align: center;
+    line-height: 1.0;
+    width: 90%;
+    padding: 10%;
 }
 .decoration{
-    background-color: #F9B5AC;
-    margin: auto;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    background-color: #2d53ff;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin: 1%;
+    text-align: center;
     align-self: center;
-    width: 100px;
-    margin: 100px;
-    padding: 5%;
+    justify-content: center;
+    padding: 8%;
+}
+.decoration h3{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    line-height: 1px;
+}
+form{
+    width: 95%;
+    margin: auto;
+}
+form input{
+    background-color: black;
+    color: #b6c6ff96 ;
+    display: block;
+    width: 95%;
+    margin: 2%;
+}
+form button{
+    background-color: #2d53ff;
+    align-items: center ;
+    width: fit-content;
+    padding: 5px;
+    border: none;
+    color: #f6f8ff ;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    float: right;
 }
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2%;
-    /* padding:3%; */
+    text-align: center;
+    padding:3%;
 }
 .arrow{
     width: 150px;
-    margin: -20px;
-    /* margin-right: 5%;  */
+    margin-top: -20px;
     float: right;
 }
 @media (max-width:840px) {
-    header{
-        align-items: flex-start;
+    header #s-skill{
+        width: max-content;
+        font-size: smaller;
+        margin: 0%;
+    }
+    .foot{
+        justify-content: space-between;
+    }
+    .study{
+        flex-direction: column-reverse;
+        width: fit-content;
+    }
+    .study img {
+        width:30%;
     }
     section{
+        align-self: center;
         width: 95%;
     }
-    main{
-        flex-wrap: wrap-reverse;
+    header .decoration h3{
+        writing-mode: horizontal-tb;
     }
+    header .decoration {
+        background: none;
+        margin: 0%;
+        padding: 2%;
+    }
+    /* main{
+        flex-wrap: wrap-reverse;
+    } */
     #t-skill {
         width: 95%;
     }
     #s-skill{
-        max-width:  250px;
+        flex-direction: column;
     }
-    .right{
+    .project{
+        flex-direction: column;
+    }
+    .card{
+        width: 95%;
+        height: calc(92%/3);
         display: flex;
+        flex-direction: row;
+    }
+    .card img{
+        width: 45%;
+    }
+    main .hobby{
+        flex-direction: column-reverse;
     }
     .decoration{
         margin: 20px;
+    }
+    .incontact{
+        flex-wrap: wrap;
+    }
+    form{
+        width: 95%;
     }
     footer{
         grid-template-columns: 1fr 1fr;
@@ -177,27 +289,60 @@ footer{
 @media (max-width:500px) {
     body{
         font-size: 1.2rem;
+        padding-right: 10%;
     }
     header{
-        flex-wrap: wrap-reverse;
+        width: 100%;
     }
     .profile{
         width: 80%;
     }
     #about{
         width: 90%;
+        flex-direction: column-reverse;
         align-items:flex-start;
     }
-    #t-skill{
-        border-top-left-radius: 40%;
+    header #s-skill{
+        width: 100%;
+
     }
-    .right{
-        flex-wrap: wrap;
+    .study section{
+        flex-direction: row;
+        width: 100%;
+        align-content: center;
+
+    }
+    #t-skill .f{
+       flex-wrap: wrap;
+    }
+    #t-skill .g{
+        margin: 10px;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card img{
+        width: 95%;
+    }
+    main .hobby .left{
+        flex-direction: column-reverse;
     }
     footer{
         display: block;
     }
     footer div{
         padding: 3%;
+    }
+    .foot{
+        flex-direction: column-reverse;
+        padding: 5%;
+        margin-right: 20px;
+    }
+    #s-skill ul,.left ul{
+        border: none;
+        padding: 10px;
+    }
+    .decoration{
+        background:none;
     }
 }
